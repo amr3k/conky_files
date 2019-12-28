@@ -28,9 +28,9 @@ mkdir -p ~/.conky/weather
 # then:
 cd ~/.config/
 
-git clone https://github.com/akkk33/conky_files.git
+git clone https://github.com/akkk33/conky_files.git conky
 
-cd conky_files/
+cd conky/
 
 pip3 install --user -r requirements.txt
 
