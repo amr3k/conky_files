@@ -22,6 +22,10 @@ Also your city ID is in a URL like this : `https://openweathermap.org/city/26437
 ## Installing
 
 ```bash
+# create a directory for data:
+mkdir -p ~/.conky/weather
+
+# then:
 cd ~/.config/
 
 git clone https://github.com/akkk33/conky_files.git
