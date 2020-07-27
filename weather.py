@@ -16,7 +16,7 @@ def download_img(icon_url: str):
             with open(f"{DATA_PATH}icon.png", 'wb') as file:
                 r.raw.decode_content = True
                 copyfileobj(r.raw, file)
-    except (ConnectionError):
+    except (Exception):
         return
 
 
