@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+conky -c ~/.config/conky/basic.conf --daemonize #--pause=5
+
+swid=`wmctrl -lp|grep conky|tail -1|cut -d ' ' -f1`
+
+xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 1 -id $swid
