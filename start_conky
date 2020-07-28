@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-conky -c ~/.config/conky/basic.conf --daemonize #--pause=5
+conky -c ~/.config/conky/basic.conf --daemonize --pause=5
 
 swid=`wmctrl -lp|grep conky|tail -1|cut -d ' ' -f1`
 
