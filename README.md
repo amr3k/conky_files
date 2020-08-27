@@ -1,14 +1,5 @@
 # My conky configuration
 
-You need to add two environment variables to your system.
-
-If you are using bash, edit `~/.bash_profile` and add the following:
-
-```bash
-export OWM_API_KEY="YOUR_API_KEY"
-export OWM_CITY_ID=YOUR_CITY_ID
-```
-
 You can get your API key from [Openweathermap](https://home.openweathermap.org/api_keys).
 
 Also your city ID is in a URL like this : `https://openweathermap.org/city/2643743`, Search for your city and get that ID.
@@ -22,17 +13,13 @@ Also your city ID is in a URL like this : `https://openweathermap.org/city/26437
 ## Installing
 
 ```bash
-# create a directory for data:
-mkdir -p ~/.conky/weather
+git clone https://github.com/ShogunExecutioner/conky_files.git ~/.config/conky
 
-# then:
-cd ~/.config/
+cd ~/.config/conky/
+## Important :
+## Edit the file sytemd/weather.service and type your api key, city id, username
 
-git clone https://github.com/akkk33/conky_files.git conky
+./install.sh
+./start_conky
 
-cd conky/
-
-pip3 install --user -r requirements.txt
-
-conky -c system.conf && conky -c weather.conf
 ```
