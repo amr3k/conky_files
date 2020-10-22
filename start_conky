@@ -1,4 +1,6 @@
 #!/usr/bin/bash
+killall -9 conky;
+sleep 1
 conky -c ~/.config/conky/basic.conf --daemonize --pause=3
 sleep 0.1
 swid=`wmctrl -lp|grep conky|tail -1|cut -d ' ' -f1`
