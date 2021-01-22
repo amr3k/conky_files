@@ -18,7 +18,7 @@ def get_data(key: str):
             download_img(f"http://openweathermap.org/img/wn/{weather_data.get_weather_icon_name()}@2x.png")
             return weather_data
     except:
-        return
+        pass
 
 
 def download_img(icon_url: str):
