@@ -1,5 +1,7 @@
 .env
 .vscode
+systemd/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
