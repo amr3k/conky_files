@@ -7,8 +7,10 @@ Also your city ID is in a URL like this : `https://openweathermap.org/city/26437
 ## Requirements
 
 - Conky
+- systemd
 - Python > 3.6
 - Openweathermap free account
+- Optional [pipenv]
 
 ## Installing
 
@@ -16,9 +18,30 @@ Also your city ID is in a URL like this : `https://openweathermap.org/city/26437
 git clone https://github.com/ShogunExecutioner/conky_files.git ~/.config/conky
 
 cd ~/.config/conky/
-## Important :
-## Edit the file sytemd/weather.service and type your api key, city id, username
+```
 
+- If you have `pipenv` installed:
+
+```bash
+pipenv shell
+pipenv sync
+```
+
+- Or install required packages using `pip`.
+
+```bash
+pip install -r requirements.txt
+```
+
+- Now copy `.env-sample` to `.env` and add your data.
+
+```bash
+cp .env-sample .env
+```
+
+- Also edit `sytemd/weather.service` and type your api key, city id, username
+
+```bash
 ./install.sh
 ./start_conky
 
