@@ -48,6 +48,6 @@ cp systemd/weather-example.service systemd/weather.service
 
 - Finally
 ```bash
-./install.sh
+sudo ./install.sh
 ./start_conky
 ```
