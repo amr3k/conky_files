@@ -1,8 +1,0 @@
-[Unit]
-Description=Get weather data
-
-[Service]
-Type=oneshot
-Environment=OWM_API_KEY=YOUR_KEY_API
-Environment=OWM_CITY_ID=YOUR_CITY_ID
-ExecStart=/usr/bin/python3 /home/YOUR_USERNAME/.config/conky/weather.py
