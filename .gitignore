@@ -1,6 +1,6 @@
 .env
 .vscode
-systemd/weather.service
+systemd/wttr.service
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
