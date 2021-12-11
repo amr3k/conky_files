@@ -1,7 +1,6 @@
 #!/usr/bin/bash
 
-mkdir -p ~/.conky/weather
-cp systemd/weather.service systemd/weather.timer /etc/systemd/user/
+sudo cp systemd/wttr.service systemd/wttr.timer /etc/systemd/user/
 systemctl --user daemon-reload
-systemctl --user enable weather.timer
-systemctl --user start weather.timer
+systemctl --user enable wttr.timer
+systemctl --user start wttr.timer
