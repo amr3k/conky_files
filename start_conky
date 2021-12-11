@@ -1,8 +1,7 @@
 #!/usr/bin/bash
 killall -9 conky;
+conky -c ~/.config/conky/basic.conf --daemonize --pause=1
 sleep 1
-conky -c ~/.config/conky/basic.conf --daemonize --pause=3
-sleep 0.1
 swid=`wmctrl -lp|grep conky|tail -1|cut -d ' ' -f1`
 
 xprop -f _KDE_NET_WM_BLUR_BEHIND_REGION 32c -set _KDE_NET_WM_BLUR_BEHIND_REGION 1 -id $swid

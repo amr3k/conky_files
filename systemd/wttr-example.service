@@ -1,0 +1,6 @@
+[Unit]
+Description=Get weather data
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/curl "http://wttr.in/<your-city>?0TFnq" -o /tmp/wttr.txt
