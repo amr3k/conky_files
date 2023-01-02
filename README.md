@@ -4,11 +4,11 @@
 ## Installing
 
 ```sh
-git clone https://github.com/416d72/conky_files.git ~/.config/conky
+git clone https://github.com/amr3k/conky_files.git ~/.config/conky
 cd ~/.config/conky/
 ```
 
-- Copy `sytemd/wttr-example.service`
+- Copy systemD service unit
 
 ```sh
 cp systemd/wttr-example.service systemd/wttr.service
